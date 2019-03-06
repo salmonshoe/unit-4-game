@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Overlock:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/walter-white.png">
+</head>
+<header class="mx-auto">
+    <h1>BREAKING CRYSTAL BLACKJACK</h1>
+</header>
+
+<body background="assets/images/walter.jpg">
+    <div class="container">
+
+        <div class="instructions">
+            <p>Heisenberg will give you the number of crystals he needs for a batch of blue ice at the start of the
+                game.</p>
+            <p>There are four types of crystals below. By clicking on a crystal you will add a specific amount of points
+                to your
+                total score.</p>
+            <p>You win the game by matching your total score to the target number. You lose the game if your total score
+                surpasses the random number.</p> 
+            <p>Produce the exact amount before delivery!</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Every moment the game starts, the values of each crystal will change.</p>
+        </div>
+
+        <div id="target-number">
+            <p>Heisenberg needs <span id="number-to-hit"></span> crystals!</p>
+        </div>
+
+        <div class="crystals"
+            style="background-image: url(https://png.pngtree.com/thumb_back/fw800/20151014/pngtree-Texture-Pattern-Surface-Crystal-background-photo-244784.jpg)">
+            <div id="meth">
+                <img src="https://static.wixstatic.com/media/238616_03b57b312f9348d09693b143e6229bab.png/v1/fit/w_498,h_594,q_90/file.webp"
+                    alt="meth" height="300" width="300">
+            </div>
+            <div id="baby-blue">
+                <img src="assets/images/baby-blue.png" alt="baby blue crystal" height="300" width="300">
+            </div>
+            <div id="ugly">
+                <img src="https://cdn6.bigcommerce.com/s-uoiqho/content/turquoise_mine_examples/Sleeping-Beauty-Turquoise-Rough-whitef.gif"
+                    alt="ugly crystal" height="300" width="300">
+            </div>
+            <div id="teal">
+                <img src="assets/images/baby-teal.png" alt="teal crystal" height="300" width="300">
+            </div>
+        </div>
+
+        <div class="scoreboard">
+            <div class="row">
+                <div class=".col-sm-12">
+                    <img src="https://cdn3.iconfinder.com/data/icons/crime-police/112/37-crime-police-2_breaking-bad-drug-dealer-2-512.png"
+                        alt="walter white" height="228" width="250">
+                    <h3>Your score is :  <span id="scoreboard"></span></h3>
+                    <br>
+                    <div class="col-sm-6">
+                        <div class="row" id="score-count">
+                            <h4>Wins: <span id="wins"></span></h4>
+                            <h4>Losses: <span id="losses"></span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
